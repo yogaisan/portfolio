@@ -1,5 +1,5 @@
 <div class="navbar">
-  <a href="<%= root_path %>"><%= image_tag 'yogaisan.jpg', class: 'image' %></a>
+  <a href="<%= root_path %>"><%= image_tag 'yogaisan.jpg', class: 'profile-image' %></a>
   <a href="https://drive.google.com/file/d/1KoQMrhn5VBldd98uX2D8HafAvzX5LXRo/view?usp=sharing" target="_blank", class=" nav-link CV"><h3>My CV</h3></a>
 </div>
 
@@ -18,5 +18,51 @@
 </div>
 
 <div class="projects">
-  <h2>My Projects</h2>
+  <h2><strong>My recent projects</strong></h2>
+  <br>
+  <div class="cards">
+    <div class="card">
+      <%= image_tag 'bateau.png', class: 'project-image' %>
+      <div class="project-description">
+        <h4>Le Bateau rails app</h4>
+        <a href="https://bateau712.herokuapp.com/" class="btn-medium" target="_blank">Visit Website <i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="card">
+      <%= image_tag 'myposh.png', class: 'project-image' %>
+      <div class="project-description">
+        <h4>My Posh rails app</h4>
+        <a href="https://my-posh-wedding-rental.herokuapp.com/" class="btn-medium" target="_blank">Visit Website <i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
+
+<div class="about">
+  <h2><strong>About me</strong></h2>
+  <br>
+  <h4>Having an engineering background and recently completed Le Wagon Bootcamp, I am currently looking to build a career in frontend web development by using all the knowledge acquired during the bootcamp and also through continuous learning.</h4>
+  <hr>
+</div>
+
+<div class="hobbies">
+  <h2><strong>Interests/hobbies</strong></h2>
+  <br>
+  <ul>
+    <li><h4>Football</h4></li>
+    <li><h4>Listening to music</h4></li>
+  </ul>
+  <hr>
+</div>
+
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="https://github.com/yogaisan" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/yogaisan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    Made with <i class="fas fa-heart"></i> by Yogaisan Ramasawmy
+  </div>
 </div>
