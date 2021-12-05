@@ -86,14 +86,13 @@ hr {
   margin: 50px auto;
 
   .cards {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 
   .card {
-    width: 45%;
+    width: 100%;
     margin: 20px auto;
+    margin-bottom: 40px;
   }
 
   .project-description {
@@ -101,6 +100,7 @@ hr {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    background: rgba(63, 131, 255, 0.596);
   }
 
   h4 {
@@ -118,9 +118,9 @@ hr {
 }
 
 .btn-medium {
-  color: #999999;
+  color: #504c4c;
   font-weight: lighter;
-  opacity: 0.6;
+  opacity: 0.8;
 
   &:hover {
     opacity: 1;
