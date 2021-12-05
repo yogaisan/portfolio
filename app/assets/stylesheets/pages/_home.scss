@@ -157,12 +157,12 @@ hr {
   flex-direction: column;
   height: 125px;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
-  background: rgb(238,174,202);
-  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(255,255,255,1) 100%);
+  color: rgba(189, 201, 201, 0.4);
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,0.2) 0%, rgba(252,70,107,0.2) 100%);
 
   .fa-heart {
-  color: #D23333;
+  color: #ff0000;
   }
 }
 
@@ -174,9 +174,9 @@ hr {
 
 .footer-links a {
   color: black;
-  opacity: 0.15;
+  opacity: 0.5;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 32px;
   padding: 0px 10px;
 
   &:hover {
