@@ -38,6 +38,7 @@ hr {
   border: 0 none;
   color: rgb(212, 44, 44);
   height: 12px;
+  width: 70%;
 }
 
 .description {
@@ -77,7 +78,6 @@ hr {
   .tech-image {
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 40px;
   }
 }
 
@@ -85,14 +85,16 @@ hr {
   width: 70%;
   margin: 50px auto;
 
-  .cards {
-    margin-bottom: 60px;
-  }
-
   .card {
     width: 100%;
-    margin: 20px auto;
-    margin-bottom: 40px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+  }
+
+  .card:hover {
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
   }
 
   .project-description {
@@ -100,21 +102,23 @@ hr {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 20px;
     background: rgba(63, 131, 255, 0.596);
   }
 
-  h4 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.2rem;
-  }
+    h4 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1.2rem;
+      margin-top: 7px;
+    }
 
-  i {
-    font-size: 0.7rem;
-  }
+    i {
+      font-size: 0.7rem;
+    }
 }
 
 .btn-medium {
-  color: #504c4c;
+  color: #312b2b;
   font-weight: lighter;
   opacity: 0.8;
 
@@ -130,16 +134,11 @@ hr {
   width: 70%;
   margin: 50px auto;
   text-align: justify;
-
-  h4 {
-    margin-bottom: 45px;
-  }
 }
 
 .hobbies {
   width: 70%;
   margin: 50px auto;
-  padding-bottom: 100px;
 
   ul {
     margin-bottom: 45px;
@@ -177,5 +176,90 @@ hr {
 
   &:hover {
     opacity: 1;
+  }
+}
+
+
+@media (min-width: 100px) and (max-width: 775px) {
+  .profile-image {
+    width: 55px;
+    height: 55px;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  .CV {
+    margin-top: 35px;
+    margin-right: 10px;
+
+    h3 {
+      font-size: 1.4rem;
+    }
+  }
+
+  .description {
+    margin-top: 50px;
+
+    h1 {
+      font-size: 1.4rem;
+    }
+
+    span {
+      font-size: 0.8rem;
+      text-align: justify;
+    }
+  }
+
+  .header {
+
+    h2 {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+  }
+
+  .project-description {
+    height: 10px !important;
+
+    h4 {
+      font-size: 0.6rem;
+      margin-top: 7px;
+    }
+
+    a {
+      font-size: 0.5rem;
+    }
+
+    i {
+      font-size: 0.5rem;
+    }
+  }
+
+  .about {
+    h4 {
+      font-size: 1rem;
+    }
+  }
+
+  .hobbies {
+    h4{
+      font-size: 1rem;
+    }
+  }
+
+  .footer {
+    height: 75px;
+
+    .footer-links {
+      margin-bottom: 0;
+    }
+
+    .footer-links i {
+      font-size: 1.2rem;
+    }
+
+    .footer-copyright {
+      font-size: 0.7rem;
+    }
   }
 }
