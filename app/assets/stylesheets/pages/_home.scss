@@ -51,6 +51,7 @@ hr {
   font-size: 3.5rem;
   font-weight: bolder;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
   }
 
   p {
@@ -59,6 +60,7 @@ hr {
     font-family: monospace;
     color: hsl(0, 0%, 10%);
     margin-bottom: 40px;
+    text-align: center;
   }
 }
 
@@ -71,6 +73,7 @@ hr {
   margin-top: 40px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   background: linear-gradient(rgba(29, 28, 28, 0.4),rgba(0,0,0,0.4));
+  zoom: 120%;
 }
 
 
@@ -81,6 +84,9 @@ hr {
   .tech-image {
     width: 100%;
     margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(250, 250, 250, 1);
+    border-radius: 10px;padding: 20px;
   }
 }
 
@@ -88,17 +94,22 @@ hr {
   width: 70%;
   margin: 50px auto;
 
+  .cards {
+    display: flex;
+  }
+
   .card {
-    width: 100%;
-    margin: 0 auto;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
     border-radius: 10px;
+    width: 40%;
+    margin: 0 auto;
   }
 
   .card-image {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    width: 100%;
   }
 
   .card:hover {
@@ -229,16 +240,28 @@ hr {
     }
   }
 
+  .projects {
+    .cards {
+      display: block;
+    }
+
+    .card {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
   .project-description {
     height: 10px !important;
 
     h4 {
       font-size: 0.6rem;
-      margin-top: 7px;
+      margin-top: 8px;
     }
 
     a {
       font-size: 0.5rem;
+      margin-top: 3px;
     }
 
     i {
@@ -271,6 +294,27 @@ hr {
 
     .footer-copyright {
       font-size: 0.7rem;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 776px) and (max-width: 1024px) {
+  .projects {
+    .cards {
+      display: block;
+    }
+
+    .card {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .header {
+
+    h2 {
+      text-align: center;
     }
   }
 }
