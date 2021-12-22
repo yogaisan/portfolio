@@ -83,10 +83,10 @@ hr {
 
   .tech-image {
     width: 100%;
-    margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.8);
     border: 2px solid rgba(250, 250, 250, 1);
-    border-radius: 10px;padding: 20px;
+    border-radius: 10px;
+    padding: 20px;
   }
 }
 
@@ -104,6 +104,7 @@ hr {
     border-radius: 10px;
     width: 40%;
     margin: 0 auto;
+    transition: all 0.5s ease-in-out;
   }
 
   .card-image {
@@ -113,8 +114,8 @@ hr {
   }
 
   .card:hover {
-    transform: scale(1.01);
-    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
   }
 
   .project-description {
@@ -208,6 +209,7 @@ hr {
     height: 55px;
     margin-left: 10px;
     margin-top: 20px;
+    zoom: 100%;
   }
 
   .CV {
